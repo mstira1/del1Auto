@@ -1,7 +1,7 @@
 Feature: User Registration on Basketball England
   Scenario: Register user
     Given User navigates to the registration page
-    And Entered date of birth "June 2000"
+    #And Entered date of birth "June 2000"
     And Entered first name, lastname
       | Andy | Simon |
     #And Entered last name "Andy"

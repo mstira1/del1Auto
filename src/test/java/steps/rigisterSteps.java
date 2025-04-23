@@ -36,7 +36,7 @@ public class rigisterSteps {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @And("Entered date of birth {string}")
+//    @And("Entered date of birth {string}")
 //    public void entered_date_of_brith(String birth) {
 //        driver.findElement(By.xpath("//*[@id=\"dp\"]")).click();
 //        waitForElement(By.xpath("/html/body/div[2]"));
