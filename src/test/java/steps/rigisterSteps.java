@@ -36,23 +36,6 @@ public class rigisterSteps {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-//    @And("Entered date of birth {string}")
-//    public void entered_date_of_brith(String birth) {
-//        driver.findElement(By.xpath("//*[@id=\"dp\"]")).click();
-//        waitForElement(By.xpath("/html/body/div[2]"));
-//
-//
-//        String aMonth = driver.findElement(By.xpath("/html/body/div[2]/div[1]/table/thead/tr[2]/th[2]")).getText();
-//
-//
-//        while (!(aMonth.equals(birth))) {
-//            driver.findElement(By.xpath("/html/body/div[2]/div[1]/table/thead/tr[2]/th[1]/i")).click();
-//            aMonth = driver.findElement(By.xpath("/html/body/div[2]/div[1]/table/thead/tr[2]/th[2]")).getText();
-//
-//
-//        }
-//        driver.findElement(By.xpath("/html/body/div[2]/div[1]/table/tbody/tr[4]/td[5]")).click();
-//    }
 
     @And("Entered first name, lastname")
     public void enteredFirstAnd(DataTable whendata) {
