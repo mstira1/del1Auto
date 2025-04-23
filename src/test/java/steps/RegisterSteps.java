@@ -41,16 +41,19 @@ public class RegisterSteps {
     public void anvandarenFyllerIAllaObligatoriskaFaltKorrekt() {
 
         driver.findElement(By.id("member_firstname")).sendKeys("alio");
-//
-//
-//    }
-//
-//
-//
-//    @And("lösenorden matchar")
-//    public void losenordenMatchar() {
-//
-//    }
+        waitForElement(By.cssSelector("#member_lastname")).sendKeys("Samer");
+        driver.findElement(By.cssSelector("[name=EmailAddress]")).sendKeys("test1233@gmail.com");
+        driver.findElement(By.id("member_confirmemailaddress")).sendKeys("test1233@gmail.com");
+
+
+
+   }
+
+   @And("lösenorden matchar")
+    public void losenordenMatchar() {
+       driver.findElement(By.id("signupunlicenced_password")).sendKeys("test123");
+       driver.findElement(By.id("signupunlicenced_confirmpassword")).sendKeys("test123");
+    }
 //
 //    @And("användaren godkänner terms and conditions")
 //    public void anvandarenGodkannerTermsAndConditions() {
@@ -59,5 +62,5 @@ public class RegisterSteps {
 //
 //    @Then("ett konto skapas och en bekräftelse visas")
 //    public void ettKontoSkapasOchEnBekraftelseVisas() {
-   }
+ //  }
 }
