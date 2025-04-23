@@ -37,10 +37,10 @@ public class RegisterSteps {
         driver.navigate().refresh();
     }
 
-//    @When("användaren fyller i alla obligatoriska fält korrekt")
-//    public void anvandarenFyllerIAllaObligatoriskaFaltKorrekt() {
-//
-//        driver.findElement(By.id("member_firstname")).sendKeys("alio");
+    @When("användaren fyller i alla obligatoriska fält korrekt")
+    public void anvandarenFyllerIAllaObligatoriskaFaltKorrekt() {
+
+        driver.findElement(By.id("member_firstname")).sendKeys("alio");
 //
 //
 //    }
@@ -59,5 +59,5 @@ public class RegisterSteps {
 //
 //    @Then("ett konto skapas och en bekräftelse visas")
 //    public void ettKontoSkapasOchEnBekraftelseVisas() {
-//    }
+   }
 }
