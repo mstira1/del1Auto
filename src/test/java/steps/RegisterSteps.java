@@ -37,27 +37,27 @@ public class RegisterSteps {
         driver.navigate().refresh();
     }
 
-    @When("användaren fyller i alla obligatoriska fält korrekt")
-    public void anvandarenFyllerIAllaObligatoriskaFaltKorrekt() {
-
-        driver.findElement(By.id("member_firstname")).sendKeys("alio");
-
-
-    }
-
-
-
-    @And("lösenorden matchar")
-    public void losenordenMatchar() {
-
-    }
-
-    @And("användaren godkänner terms and conditions")
-    public void anvandarenGodkannerTermsAndConditions() {
-
-    }
-
-    @Then("ett konto skapas och en bekräftelse visas")
-    public void ettKontoSkapasOchEnBekraftelseVisas() {
-    }
+//    @When("användaren fyller i alla obligatoriska fält korrekt")
+//    public void anvandarenFyllerIAllaObligatoriskaFaltKorrekt() {
+//
+//        driver.findElement(By.id("member_firstname")).sendKeys("alio");
+//
+//
+//    }
+//
+//
+//
+//    @And("lösenorden matchar")
+//    public void losenordenMatchar() {
+//
+//    }
+//
+//    @And("användaren godkänner terms and conditions")
+//    public void anvandarenGodkannerTermsAndConditions() {
+//
+//    }
+//
+//    @Then("ett konto skapas och en bekräftelse visas")
+//    public void ettKontoSkapasOchEnBekraftelseVisas() {
+//    }
 }
